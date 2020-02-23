@@ -26,8 +26,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Transactional
 	@Override
 	public Employee searchEmployee(int eno) {
-
-		return null;
+		Employee emp=hibernateTemplate.get(Employee.class, eno);
+		return emp;
 	}
 
 	@Transactional

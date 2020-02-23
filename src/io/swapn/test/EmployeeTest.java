@@ -11,11 +11,15 @@ public class EmployeeTest {
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		EmployeeDAO dao = (EmployeeDAO) context.getBean("empDao");
 		Employee emp = new Employee();
-		emp.setEno(101);
-		emp.setName("swapnil");
-		emp.setSalary(50000);
+		emp.setEno(105);
+		emp.setName("smith");
+		emp.setSalary(20000);
 		emp.setAddress("Barshi");
 		String status = dao.insertEmployee(emp);
-		System.out.println(status);
+		System.out.println("Employee save "+status+"with id - "+emp.getEno());
+		
+		System.out.println("search result...");
+		Employee employee=dao.searchEmployee(101);
+		System.out.println(employee);
 	}
 }
