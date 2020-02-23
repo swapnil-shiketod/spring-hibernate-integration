@@ -5,5 +5,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate-lib"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring-lib"/>
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/swapnil soft/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lenovo/Downloads/aopalliance-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
